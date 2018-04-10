@@ -16,7 +16,8 @@ import javax.persistence.Table;
 public class Banque {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="ID")
+	private Integer id;
+	@Column(name="NOM")
 	private String nom;
 	@OneToMany(mappedBy="banque")
 	Set<Client>clients;
@@ -24,7 +25,10 @@ public class Banque {
 	public Banque(){
 		clients = new HashSet<Client>();
 	}
-	
+	public Banque(String nom){
+		this.nom = nom;
+		clients = new HashSet<Client>();
+	}
 	public String getNom() {
 		return nom;
 	}

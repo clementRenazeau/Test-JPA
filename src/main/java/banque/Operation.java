@@ -30,6 +30,15 @@ public class Operation {
 	@JoinColumn(name = "ID_COMPTE", nullable = false)
 	private Compte compte;
 	
+	public Operation(){
+		
+	}
+	public Operation(LocalDate date, double montant, String motif, Compte compte){
+		this.date=date;
+		this.montant=montant;
+		this.motif=motif;
+		this.compte=compte;
+	}
 	public Integer getId() {
 		return id;
 	}

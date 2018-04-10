@@ -11,7 +11,7 @@ public class TestJPA {
 
 	
 	public static void main(String[] args){
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("pizzaDB");
+		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("banque");
 		EntityManager em = entityManagerFactory.createEntityManager();
 		
 		LOG.info("lancement de l'application.");

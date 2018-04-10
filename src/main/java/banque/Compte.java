@@ -35,7 +35,12 @@ public class Compte {
 		clients = new HashSet<Client>();
 		operations = new HashSet<Operation>();
 	}
-
+	public Compte(String numero, double solde){
+		this.numero=numero;
+		this.solde=solde;
+		clients = new HashSet<Client>();
+		operations = new HashSet<Operation>();
+	}
 	public Integer getId() {
 		return id;
 	}

@@ -43,6 +43,14 @@ public class Client {
 		comptes = new HashSet<Compte>();
 	}
 
+	public Client(String nom, String prenom, LocalDate dateNaissance, Adresse adresse, Banque banque){
+		this.nom = nom;
+		this.prenom=prenom;
+		this.dateNaissance=dateNaissance;
+		this.adresse=adresse;
+		this.banque=banque;
+		comptes = new HashSet<Compte>();
+	}
 	public Integer getId() {
 		return id;
 	}
